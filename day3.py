@@ -45,3 +45,39 @@ print(fruits) # ['orange', 'mango', 'lemon', 'banana']
 list1 = ['item1', 'item2']
 list2 = ['item3', 'item4', 'item5']
 list1.extend(list2)
+
+
+# A tuple is a collection of different data types which is ordered and unchangeable (immutable). Tuples are written with round brackets, (). Once a tuple is created, we cannot change its values. We cannot use add, insert, remove methods in a tuple because it is not modifiable (mutable). Unlike list, tuple has few methods. Methods related to tuples:
+
+#     tuple(): to create an empty tuple
+#     count(): to count the number of a specified item in a tuple
+#     index(): to find the index of a specified item in a tuple
+#         operator: to join two or more tuples and to create a new tuple
+
+fruits = ('banana', 'orange', 'mango', 'lemon')
+
+# Slicing tuples
+# We can slice out a sub-tuple by specifying a range of indexes where to start and where to end in the tuple, the return value will be a new tuple with the specified items.
+fruits = ('banana', 'orange', 'mango', 'lemon')
+all_fruits = fruits[0:4]    # all items
+all_fruits= fruits[0:]      # all items
+orange_mango = fruits[1:3]  # doesn't include item at index 3
+orange_to_the_rest = fruits[1:]
+
+
+# Set is a collection of items. Let me take you back to your elementary or high school Mathematics lesson. 
+# The Mathematics definition of a set can be applied also in Python. Set is a collection of unordered and un-indexed distinct elements. 
+# In Python set is used to store unique items, and it is possible to find the union, intersection, difference, symmetric difference, subset, super set and disjoint set among sets.
+
+# syntax
+st = {'item1', 'item2', 'item3', 'item4'}
+st.remove('item2')
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.pop()  # removes a random item from the set
+
+
+# syntax
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item2', 'item3'}
+st2.isdisjoint(st1) # False
