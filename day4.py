@@ -1,12 +1,37 @@
-# person_info = {
-#    'firstname':'Asabeneh',
-#    'lastname':'Yetayeh',
-#    'country':'Finland',
-#    'city':'Helsinki'
-#    }
+#DICTIONARY
+# A dictionary is a collection of unordered, modifiable(mutable) paired (key: value) data type.
+# To create a dictionary we use curly brackets, {} or the dict() built-in function.
 
-# print(person_info[0])
 
-fruits = ['banana', 'orange', 'mango', 'lemon']
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+print(len(dct)) # 4
 
-print(fruits[0])
+
+person_info = {
+   'firstname':'Asabeneh',
+   'lastname':'Yetayeh',
+   'country':'Finland',
+   'skills': ['python','java','flask', 'databases'],
+   'city':'Helsinki',
+   'address':{
+        'street':'Mombasa',
+        'postcode':'01-0098-8354'
+   }
+   }
+
+print(person_info.get('firstname')) # Asabeneh
+print(person_info.get('country'))    # Finland
+print(person_info.get('skills'))     # ['JavaScript', 'React', 'Node', 'MongoDB', 'Python']
+print(person_info.get('skills'[0]))  # JavaScript
+print(person_info.get('address','street')) # Space street
+print(person_info.get('city'))       # Error
+
+
+
+# person['job_title'] = 'Instructor'
+# person['skills'].append('HTML')
+# print(person)
+
+
+
