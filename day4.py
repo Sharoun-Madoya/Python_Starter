@@ -26,7 +26,8 @@ print(person_info.get('skills'))     # ['JavaScript', 'React', 'Node', 'MongoDB'
 print(person_info.get('skills'[0]))  # JavaScript
 print(person_info.get('address','street')) # Space street
 print(person_info.get('city'))       # Error
-
+person['first_name'] = 'Eyob'
+person['age'] = 252
 
 
 # person['job_title'] = 'Instructor'
@@ -34,4 +35,16 @@ print(person_info.get('city'))       # Error
 # print(person)
 
 
+# Adding Items to a Dictionary
+# We can add new key and value pairs to a dictionary
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct['key5'] = 'value5'
 
+dct.pop('key1') # removes key1 item
+dct.popitem() # removes the last item
+del dct['key2'] # removes key2 item
+dct_copy = dct.copy()
+keys = dct.keys()
+values = dct.values()
+print(values)     # dict_values(['value1', 'value2', 'value3', 'value4'])
